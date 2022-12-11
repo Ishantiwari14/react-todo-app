@@ -26,7 +26,7 @@ function App() {
 
   const inputKeyDown = (ev) => {
     console.log(ev.key)
-    if (ev.key == "Enter"){
+    if (ev.key === "Enter"){
       toDoList.push({description: taskInput, isComplete: false})
       updateToDoList(toDoList)
       updateTaskInput("")
